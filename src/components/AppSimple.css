@@ -107,3 +107,17 @@ p{
 .Hero, Canvas {
     width: 10%; height: 50vh;
 }
+@media screen and (max-width: 700px){
+  iframe{position: absolute; left: 10%; top: 60px; width: 130%; height: 70vh;
+  animation: lefting 3s linear infinite; } 
+  @keyframes lefting {
+    0% {left: 0%; top: 60px;}
+    50% {left: 50%;top: 120px;}
+    80% {left: 20%;top: 30px;}
+    100% {left: 0%;top: 60px;}
+  }
+  .heroTextContainer{ 
+    flex:1;
+    padding: 10px;
+  }
+}
